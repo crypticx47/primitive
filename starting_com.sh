@@ -3,7 +3,9 @@
 # Make sure you already cloned your repo before running this script
 # Example: git clone https://github.com/your-username/practice-commits.git
 
-cd practice-commits || exit
+cd "$(dirname "$0")" || exit
+
+
 
 # --- Step 1: Add .gitignore ---
 cat > .gitignore <<EOL
